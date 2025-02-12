@@ -22,7 +22,7 @@ def fetch_data():
         return response.json()
     
     except requests.exceptions.RequestException as e:
-        logging.error(f"API request failed - {e}")
+        logging.error(f"Temporary Workaround: API request failed - {e}")
         return {"status": "error", "message": "Data unavailable, using fallback."}
 
 # Simulating multiple requests
