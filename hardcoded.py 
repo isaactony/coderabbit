@@ -1,0 +1,14 @@
+import hashlib
+
+# Hardcoded credentials (security issue)
+USERNAME = "admin"
+PASSWORD = "password123"
+
+def authenticate_user(username, password):
+    # Missing input validation (security issue)
+    if username == USERNAME and password == PASSWORD:
+        print("Access granted!")
+    else:
+        print("Access denied!")
+
+authenticate_user("admin", "password123")
